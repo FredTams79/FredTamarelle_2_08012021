@@ -128,17 +128,14 @@ footer {
   background-color: #f2f2f2;
   padding: 20px;
 }
-#propos {
+#about {
   width: 30%;
-  text-align: left;
 }
-#hebergements {
-  width: 20%;
-  text-align: center;
+#housing {
+  width: 30%;
 }
 #assistance {
-  width: 20%;
-  text-align: center;
+  width: 30%;
 }
 
 /* liens */
