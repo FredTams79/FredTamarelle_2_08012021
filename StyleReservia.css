@@ -33,3 +33,119 @@
 }
 
 /* Eléménts principaux de la page */
+Body {
+  width: auto;
+  margin: 50px;
+  font-family: "ralewaymedium", Times New Roman, Arial, Verdana, Geneva, Tahoma,
+    sans-serif;
+}
+header img {
+  width: 5%;
+}
+ul {
+  list-style-type: none;
+  font-size: 0.8em;
+}
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+h1 {
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 1em;
+}
+h3 {
+  font-size: 1em;
+}
+p {
+  font-size: 0.8em;
+}
+
+/* icones */
+i {
+  color: #0065fc;
+}
+.fa-map-marker-alt {
+  color: black;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 8px;
+  border-radius: 40% 0% 0% 40%;
+  height: 18px;
+}
+.fa-money-bill-wave {
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 8px;
+  border-radius: 100%;
+}
+.fa-child {
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 100%;
+}
+.fa-heart {
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 100%;
+}
+.fa-dog {
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 10px;
+  border-radius: 100%;
+}
+.fa-chart-line {
+  color: black;
+}
+
+/* bouton rechercher */
+#city {
+  border: 1px solid #f2f2f2;
+  width: 200px;
+  height: 30px;
+  padding: 2px;
+  padding-left: 10px;
+  cursor: text;
+}
+#search {
+  color: white;
+  width: 100px;
+  height: 35px;
+  border: 1px solid #0065fc;
+  background-color: #0065fc;
+  border-radius: 0% 15% 15% 0%;
+  cursor: grab;
+}
+
+/* footer */
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#propos {
+  width: 30%;
+  text-align: left;
+}
+#hebergements {
+  width: 20%;
+  text-align: center;
+}
+#assistance {
+  width: 20%;
+  text-align: center;
+}
+
+/* liens */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
