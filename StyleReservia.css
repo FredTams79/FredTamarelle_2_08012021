@@ -1,0 +1,35 @@
+/* Projet n°2 Openclassrooms : Transformer une maquette en page WEB html5 + css */
+
+/* Police Raleway */
+@font-face {
+  font-family: "ralewayblack";
+  src: url("Raleway/raleway-black-webfont.eot");
+  src: url("Raleway/raleway-black-webfont.woff"),
+    url("Raleway/raleway-black-webfont.woff2"),
+    url("Raleway/raleway-black-webfont.ttf"),
+    url("Raleway/raleway-black-webfont.svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewaymedium";
+  src: url("Raleway/raleway-medium-webfont.eot");
+  src: url("Raleway/raleway-medium-webfont.woff"),
+    url("Raleway/raleway-medium-webfont.woff2"),
+    url("Raleway/raleway-medium-webfont.ttf"),
+    url("Raleway/raleway-medium-webfont.svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewaylight";
+  src: url("Raleway/raleway-light-webfont.eot");
+  src: url("Raleway/raleway-light-webfont.woff"),
+    url("Raleway/raleway-light-webfont.woff2"),
+    url("Raleway/raleway-light-webfont.ttf"),
+    url("Raleway/raleway-light-webfont.svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Eléménts principaux de la page */
