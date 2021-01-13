@@ -34,24 +34,22 @@
 
 /* Eléménts principaux de la page */
 Body {
-  width: auto;
+  width: 1440px;
   margin: 50px;
+  margin-top: 0;
   font-family: "ralewaymedium", Times New Roman, Arial, Verdana, Geneva, Tahoma,
     sans-serif;
 }
-header img {
-  width: 5%;
-}
+
 ul {
   list-style-type: none;
   font-size: 0.8em;
+  padding: 0;
+  margin: 0;
 }
-nav a:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
-}
+
 h1 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 h2 {
   font-size: 1em;
@@ -60,82 +58,189 @@ h3 {
   font-size: 1em;
 }
 p {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
-/* icones */
-i {
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  height: 30px;
+}
+nav a:hover {
   color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 40px;
+}
+header li {
+  display: inline-block;
+  margin: 65px;
+}
+nav {
+  float: right;
+  margin-right: 75px;
+  font-size: 1em;
+}
+
+/* localisation et rechercher */
+#containerlocal {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  height: 50px;
 }
 .fa-map-marker-alt {
   color: black;
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  padding: 8px;
-  border-radius: 40% 0% 0% 40%;
-  height: 18px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 17px 0 0 17px;
+  width: 50px;
 }
-.fa-money-bill-wave {
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 8px;
-  border-radius: 100%;
-}
-.fa-child {
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 10px;
-  border-radius: 100%;
-}
-.fa-heart {
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 10px;
-  border-radius: 100%;
-}
-.fa-dog {
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 10px;
-  border-radius: 100%;
-}
-.fa-chart-line {
-  color: black;
-}
-
-/* bouton rechercher */
 #city {
   border: 1px solid #f2f2f2;
-  width: 200px;
-  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 235px;
   padding: 2px;
-  padding-left: 10px;
+  padding-left: 20px;
   cursor: text;
 }
 #search {
   color: white;
-  width: 100px;
-  height: 35px;
+  font-size: 20px;
+  width: 133px;
   border: 1px solid #0065fc;
   background-color: #0065fc;
-  border-radius: 0% 15% 15% 0%;
+  border-radius: 0 17px 17px 0;
   cursor: grab;
+}
+
+/* filtres */
+#containerfilter {
+  margin-top: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+.filter {
+  margin-right: 25px;
+}
+.eco {
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  margin-right: 25px;
+  width: max-content;
+  height: 45px;
+  line-height: 45px;
+}
+
+.fam {
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  margin-right: 25px;
+  width: max-content;
+  height: 45px;
+  line-height: 45px;
+}
+.rom {
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  margin-right: 25px;
+  width: max-content;
+  height: 45px;
+  line-height: 45px;
+}
+.dog {
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  margin-right: 25px;
+  width: max-content;
+  height: 45px;
+  line-height: 45px;
+}
+.fa-money-bill-wave {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 14px;
+  border-radius: 100%;
+  width: 14px;
+}
+.fa-child {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 14px;
+  border-radius: 100%;
+  width: 14px;
+}
+.fa-heart {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 14px;
+  border-radius: 100%;
+  width: 14px;
+}
+.fa-dog {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  background-color: #deebff;
+  padding: 14px;
+  border-radius: 100%;
+  width: 14px;
+}
+.eco:hover,
+.fam:hover,
+.rom:hover,
+.dog:hover {
+  transform: scale(1.1);
+  background-color: #deebff;
+  border: 1px solid #0065fc;
+  cursor: pointer;
+}
+.fa-info {
+  color: #0065fc;
+  border: 1px solid #0065fc;
+  padding: 8px;
+  border-radius: 100%;
+  width: 12px;
+  text-align: center;
+}
+
+/* icones */
+.fa-chart-line {
+  color: black;
 }
 
 /* footer */
 footer {
   display: flex;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 50px;
+  align-items: baseline;
 }
 #about {
-  width: 30%;
+  width: 32%;
 }
 #housing {
-  width: 30%;
+  width: 24%;
 }
 #assistance {
-  width: 30%;
+  width: 17.5%;
 }
 
 /* liens */
