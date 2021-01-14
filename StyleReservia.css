@@ -53,6 +53,7 @@ h1 {
 }
 h2 {
   font-size: 1em;
+  margin-right: 25px;
 }
 h3 {
   font-size: 1em;
@@ -74,34 +75,34 @@ header img {
 nav a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 header li {
   display: inline-block;
-  margin: 65px;
+  margin: 40px;
 }
 nav {
   float: right;
   margin-right: 75px;
   font-size: 1em;
 }
+.inscrire {
+  color: #0065fc;
+  font-weight: bold;
+}
 
 /* localisation et rechercher */
 #containerlocal {
   display: flex;
-  flex-wrap: wrap;
   align-self: center;
   height: 50px;
 }
 .fa-map-marker-alt {
-  color: black;
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
   border-radius: 17px 0 0 17px;
-  width: 50px;
+  max-width: 50px;
+  padding: 16px 19px 16px 18px;
 }
 #city {
   border: 1px solid #f2f2f2;
@@ -125,91 +126,41 @@ nav {
 /* filtres */
 #containerfilter {
   margin-top: 30px;
+  margin-bottom: 40px;
   font-weight: bold;
   display: flex;
-  align-items: center;
-  background-color: white;
   text-align: center;
+  flex-wrap: wrap;
 }
 .filter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  border-left-style: none;
+  border-radius: 25px;
   margin-right: 25px;
 }
-.eco {
-  font-weight: bold;
-  border: 1px solid #f2f2f2;
-  border-radius: 20px;
-  margin-right: 25px;
-  width: max-content;
-  height: 45px;
-  line-height: 45px;
+.filtericons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #deebff;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.icons {
+  color: #0065fc;
+}
+.filtertext {
+  margin: 0 10px;
 }
 
-.fam {
-  font-weight: bold;
-  border: 1px solid #f2f2f2;
-  border-radius: 20px;
-  margin-right: 25px;
-  width: max-content;
-  height: 45px;
-  line-height: 45px;
-}
-.rom {
-  font-weight: bold;
-  border: 1px solid #f2f2f2;
-  border-radius: 20px;
-  margin-right: 25px;
-  width: max-content;
-  height: 45px;
-  line-height: 45px;
-}
-.dog {
-  font-weight: bold;
-  border: 1px solid #f2f2f2;
-  border-radius: 20px;
-  margin-right: 25px;
-  width: max-content;
-  height: 45px;
-  line-height: 45px;
-}
-.fa-money-bill-wave {
-  color: #0065fc;
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 14px;
-  border-radius: 100%;
-  width: 14px;
-}
-.fa-child {
-  color: #0065fc;
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 14px;
-  border-radius: 100%;
-  width: 14px;
-}
-.fa-heart {
-  color: #0065fc;
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 14px;
-  border-radius: 100%;
-  width: 14px;
-}
-.fa-dog {
-  color: #0065fc;
-  border: 1px solid #deebff;
-  background-color: #deebff;
-  padding: 14px;
-  border-radius: 100%;
-  width: 14px;
-}
-.eco:hover,
-.fam:hover,
-.rom:hover,
-.dog:hover {
+.filter:hover {
   transform: scale(1.1);
   background-color: #deebff;
   border: 1px solid #0065fc;
+  border-left-style: none;
   cursor: pointer;
 }
 .fa-info {
@@ -219,6 +170,7 @@ nav {
   border-radius: 100%;
   width: 12px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* icones */
