@@ -36,8 +36,7 @@
 Body {
   margin: 0;
   margin-top: 0;
-  font-family: "ralewaymedium", Times New Roman, Arial, Verdana, Geneva, Tahoma,
-    sans-serif;
+  font-family: "ralewaymedium", "Times New Roman", Verdana, Tahoma, sans-serif;
   overflow-x: hidden;
 }
 
