@@ -34,8 +34,7 @@
 
 /* Eléménts principaux de la page */
 Body {
-  width: 1440px;
-  margin: 50px;
+  margin: 0;
   margin-top: 0;
   font-family: "ralewaymedium", Times New Roman, Arial, Verdana, Geneva, Tahoma,
     sans-serif;
@@ -50,6 +49,10 @@ ul {
 
 h1 {
   font-size: 1.3em;
+  margin-left: 50px;
+}
+main p {
+  margin-left: 50px;
 }
 h2 {
   font-size: 1em;
@@ -67,6 +70,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 50px;
 }
 header img {
   width: 100px;
@@ -96,6 +100,7 @@ nav {
   display: flex;
   align-self: center;
   height: 50px;
+  margin: 50px;
 }
 .fa-map-marker-alt {
   border: 1px solid #f2f2f2;
@@ -131,6 +136,7 @@ nav {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
+  margin-left: 50px;
 }
 .filter {
   display: flex;
@@ -171,12 +177,92 @@ nav {
   width: 12px;
   text-align: center;
   margin-bottom: 40px;
+  margin-left: 50px;
 }
 
-/* icones */
-.fa-chart-line {
-  color: black;
+/* Hébergements et Populaires*/
+#lodging_and_populars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+#lodging {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  padding: ;
+  width: 880px;
+}
+#lodging h1 {
+  width: 100%;
+}
+.afficherplus {
+  font-weight: bold;
+  width: 100%;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+#populars {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  padding: ;
+  width: 420px;
+}
+.blue {
+  color: #0065fc;
+}
+.grey {
+  color: #f2f2f2;
+}
+.fa-chart-line {
+  float: right;
+}
+.figure_lodging {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  width: 235px;
+  height: 220px;
+}
+.figure_lodging img {
+  border-radius: 17px 17px 0 0;
+  object-fit: cover;
+  width: 235px;
+  height: 114px;
+}
+.figcaption_lodging {
+  font-size: ;
+  padding: ;
+}
+.figure_populars {
+  display: flex;
+  justify-content: ;
+  align-items: ;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  margin: ;
+  width: 344px;
+  height: 144px;
+}
+.figure_populars img {
+  border-radius: 17px 0 0 17px;
+  object-fit: cover;
+  width: 127px;
+  height: 144px;
+}
+.figcaption_populars {
+  margin-left: 10px;
+}
+
+/* Activités */
 
 /* footer */
 footer {
@@ -184,6 +270,8 @@ footer {
   background-color: #f2f2f2;
   padding: 50px;
   align-items: baseline;
+  min-width: 100%;
+  margin: 0;
 }
 #about {
   width: 32%;
