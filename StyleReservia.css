@@ -141,7 +141,7 @@ nav {
 .filter {
   display: flex;
   align-items: center;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   border-left-style: none;
   border-radius: 25px;
   margin-right: 25px;
@@ -165,7 +165,7 @@ nav {
 .filter:hover {
   transform: scale(1.1);
   background-color: #deebff;
-  border: 1px solid #0065fc;
+  border: 2px solid #0065fc;
   border-left-style: none;
   cursor: pointer;
 }
@@ -184,34 +184,9 @@ nav {
 #lodging_and_populars {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-left: 50px;
   margin-right: 50px;
-}
-#lodging {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f2f2f2;
-  border-radius: 24px;
-  padding: ;
-  width: 880px;
-}
-#lodging h1 {
-  width: 100%;
-}
-.afficherplus {
-  font-weight: bold;
-  width: 100%;
-  margin-left: 40px;
-  margin-bottom: 30px;
-}
-#populars {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f2f2f2;
-  border-radius: 24px;
-  padding: ;
-  width: 420px;
 }
 .blue {
   color: #0065fc;
@@ -219,8 +194,16 @@ nav {
 .grey {
   color: #f2f2f2;
 }
-.fa-chart-line {
-  float: right;
+#lodging {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  width: 66%;
+}
+#lodging h1 {
+  width: 100%;
+  margin-bottom: 10px;
 }
 .figure_lodging {
   display: flex;
@@ -237,18 +220,29 @@ nav {
   width: 235px;
   height: 114px;
 }
+.figure_lodging:hover {
+  transform: scale(1.05);
+}
 .figcaption_lodging {
-  font-size: ;
-  padding: ;
+}
+.afficherplus {
+  font-weight: bold;
+  width: 100%;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+#populars {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+  width: 31%;
 }
 .figure_populars {
   display: flex;
-  justify-content: ;
-  align-items: ;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin: ;
   width: 344px;
   height: 144px;
 }
@@ -260,6 +254,15 @@ nav {
 }
 .figcaption_populars {
   margin-left: 10px;
+}
+.figure_populars:hover {
+  transform: scale(1.05);
+}
+#pop_chart-line {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10px;
 }
 
 /* Activités */
