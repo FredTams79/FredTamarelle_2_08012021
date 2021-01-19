@@ -1,0 +1,169 @@
+body {
+  height: 100%;
+}
+
+/* Header */
+#header {
+  flex-wrap: wrap;
+  height: 1.9%;
+  margin: 20px 0;
+}
+.link {
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 14px;
+  padding-inline: 100%;
+}
+nav a:hover {
+  color: #0065fc;
+  border-top: none;
+  border-bottom: 2px solid #0065fc;
+  padding-bottom: 14px;
+}
+.inscrire_mobile {
+  display: flex;
+  color: #0065fc;
+  font-weight: 600;
+}
+.inscrire {
+  display: none;
+  /* position: absolute; ??? */
+}
+
+/* Main Description*/
+main {
+  height: 5.5%;
+  margin-top: 0;
+}
+h1 {
+  margin-left: 20px;
+  width: 375px;
+}
+main p {
+  margin-left: 20px;
+}
+/* localisation et rechercher */
+#containerlocal {
+  width: 100%;
+  margin: 0 20px;
+}
+#city {
+  border-right-style: none;
+}
+button {
+  width: 50px;
+  border-radius: 17px;
+  margin-left: -15px;
+}
+.searchtext {
+  display: none;
+}
+.fa-search {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+/* Filtres */
+article {
+  height: 7.4%;
+}
+#containerfilter {
+  margin-left: 20px;
+  width: 75%;
+  justify-content: space-between;
+}
+article h2:nth-of-type(1) {
+  flex: 1 100%;
+  display: inline-flex;
+}
+.filter {
+  margin-top: 10px;
+}
+.fa-info {
+  margin-left: 20px;
+}
+
+/* Hébergements et Populaires*/
+#lodging_and_populars {
+  height: 42.6%;
+  margin-top: 0;
+}
+#lodging {
+  order: 2;
+  flex-direction: column;
+  flex: 1 100%;
+  background-color: white;
+}
+.figure_lodging {
+  box-shadow: 0 0 10px 5px #f2f2f2;
+  width: 334px;
+}
+.figure_lodging img {
+  width: 334px;
+  height: 120px;
+}
+#populars {
+  order: 1;
+  flex: 1 100%;
+  border-radius: 0;
+}
+
+/* Activités*/
+#activities {
+  flex-wrap: nowrap;
+  margin-left: 20px;
+  height: 31.5%;
+}
+.figure_activities_port_calanques {
+  width: 334px;
+  height: 190px;
+}
+.figure_activities_pomegues {
+  width: 334px;
+  height: 190px;
+}
+.figure_activities_frioul {
+  width: 334px;
+  height: 190px;
+}
+.figure_activities_notredame {
+  width: 334px;
+  height: 190px;
+}
+.figure_activities_longchamp {
+  width: 334px;
+  height: 190px;
+}
+.figure_activities_port_calanques img {
+  width: 334px;
+  height: 114px;
+}
+.figure_activities_pomegues img {
+  width: 334px;
+  height: 114px;
+}
+.figure_activities_frioul img {
+  width: 334px;
+  height: 114px;
+}
+.figure_activities_notredame img {
+  width: 334px;
+  height: 114px;
+}
+.figure_activities_longchamp img {
+  width: 334px;
+  height: 114px;
+}
+
+/* Footer */
+footer {
+  flex-direction: column;
+  padding-left: 30px;
+  bottom: 0;
+  height: 11.1%;
+}
+#about,
+#housing,
+#assistance {
+  width: 100%;
+}
