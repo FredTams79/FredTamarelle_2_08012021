@@ -57,7 +57,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
-  /*max-width: 100%;*/
 }
 header img {
   padding-top: 40px;
@@ -85,6 +84,9 @@ nav a:hover {
 }
 
 /* Main Description*/
+main {
+  margin-top: 40px;
+}
 h1 {
   font-size: 1.6rem;
   margin-left: 50px;
@@ -210,6 +212,7 @@ button {
 #lodging h1 {
   width: 100%;
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 .figure_lodging {
   display: flex;
@@ -240,6 +243,9 @@ button {
   border-radius: 24px;
   width: 31%;
 }
+aside h1 {
+  margin-left: 0;
+}
 .figure_populars {
   display: flex;
   background-color: white;
@@ -263,20 +269,22 @@ button {
 }
 #pop_chart-line {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: space-around;
+  width: 100%;
   margin-bottom: 10px;
 }
 
 /* Activités */
-#activities h1 {
+#acti {
   margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 #activities {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  /*width: 100%;*/
+  justify-content: space-between;
+  margin: 0 10px;
 }
 .figure_activities_port_calanques {
   display: block;
@@ -368,6 +376,7 @@ footer {
   align-items: baseline;
   margin: 0;
   line-height: 1.5rem;
+  margin-top: 50px;
 }
 ul {
   list-style-type: none;
