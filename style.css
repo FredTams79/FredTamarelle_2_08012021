@@ -83,6 +83,38 @@ nav a:hover {
   padding-top: 30px;
 }
 
+/* MediaQueries Header */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
+    margin: 0;
+    /*width: 100%;*/
+  }
+  .inscrire {
+    order: 2;
+  }
+  .inscrire a:hover {
+    border-bottom: none;
+  }
+  .link1,
+  .link2 {
+    order: 3;
+    flex-grow: 2;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 10px;
+    /*padding-inline: 100%;*/
+    margin: 0;
+    margin-right: 30px;
+  }
+  nav a:hover {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    padding-bottom: 24px;
+  }
+}
+
 /* Main Description*/
 main {
   margin-top: 40px;
@@ -94,6 +126,22 @@ h1 {
 main p {
   margin-left: 50px;
 }
+
+/* MediaQueries Main */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 20px;
+  }
+  h1 {
+    margin-left: 20px;
+    width: 80%;
+  }
+  main p {
+    margin-left: 20px;
+  }
+}
+
 /* localisation et rechercher */
 #containerlocal {
   display: flex;
@@ -134,6 +182,31 @@ button {
   display: none;
   opacity: 0;
   position: absolute;
+}
+
+/* MediaQueries localisation rechercher */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #containerlocal {
+    width: 100%;
+    margin: 0 20px;
+  }
+  #city {
+    border-right-style: none;
+  }
+  button {
+    width: 50px;
+    border-radius: 17px;
+    margin-left: -15px;
+  }
+  .searchtext {
+    display: none;
+  }
+  .fa-search {
+    display: block;
+    opacity: 1;
+    position: relative;
+  }
 }
 
 /* Filtres */
@@ -186,6 +259,30 @@ button {
   text-align: center;
   margin-bottom: 20px;
   margin-left: 50px;
+}
+
+/* MediaQueries Filtres */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  article {
+    height: 7.4%;
+  }
+  #containerfilter {
+    margin-left: 20px;
+    width: 75%;
+    justify-content: space-between;
+  }
+  article h2:nth-of-type(1) {
+    flex: 1 100%;
+    display: inline-flex;
+  }
+  .filter {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .fa-info {
+    margin-left: 20px;
+  }
 }
 
 /* Hébergements et Populaires*/
@@ -272,6 +369,33 @@ aside h1 {
   justify-content: space-around;
   width: 100%;
   margin-bottom: 10px;
+}
+
+/* MediaQueries Hebergements Populaires */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #lodging_and_populars {
+    margin-top: 0;
+  }
+  #lodging {
+    order: 2;
+    flex-direction: column;
+    flex: 1 100%;
+    background-color: white;
+  }
+  .figure_lodging {
+    box-shadow: 0 0 10px 5px #f2f2f2;
+    width: 334px;
+  }
+  .figure_lodging img {
+    width: 334px;
+    height: 120px;
+  }
+  #populars {
+    order: 1;
+    flex: 1 100%;
+    border-radius: 0;
+  }
 }
 
 /* Activités */
@@ -368,6 +492,55 @@ aside h1 {
   padding-bottom: 5px;
 }
 
+/* MediaQueries Activites */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #activities {
+    flex-wrap: nowrap;
+    margin-left: 20px;
+  }
+  .figure_activities_port_calanques {
+    width: 334px;
+    height: 190px;
+  }
+  .figure_activities_pomegues {
+    width: 334px;
+    height: 190px;
+  }
+  .figure_activities_frioul {
+    width: 334px;
+    height: 190px;
+  }
+  .figure_activities_notredame {
+    width: 334px;
+    height: 190px;
+  }
+  .figure_activities_longchamp {
+    width: 334px;
+    height: 190px;
+  }
+  .figure_activities_port_calanques img {
+    width: 334px;
+    height: 114px;
+  }
+  .figure_activities_pomegues img {
+    width: 334px;
+    height: 114px;
+  }
+  .figure_activities_frioul img {
+    width: 334px;
+    height: 114px;
+  }
+  .figure_activities_notredame img {
+    width: 334px;
+    height: 114px;
+  }
+  .figure_activities_longchamp img {
+    width: 334px;
+    height: 114px;
+  }
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -388,6 +561,21 @@ ul {
 #housing,
 #assistance {
   width: 33%;
+}
+
+/* MediaQueries Footer */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    padding-left: 30px;
+    bottom: 0;
+  }
+  #about,
+  #housing,
+  #assistance {
+    width: 100%;
+  }
 }
 
 /* Liens */
