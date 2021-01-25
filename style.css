@@ -43,9 +43,12 @@ h2 {
 }
 h3 {
   font-size: 1rem;
+  margin-bottom: 5px;
 }
 p {
   font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Header */
@@ -283,6 +286,13 @@ button {
   }
 }
 
+/* petit desktop */
+@media screen and (max-width: 1250px) {
+  .filter {
+    margin-bottom: 20px;
+  }
+}
+
 /* Hébergements et Populaires*/
 #lodging_and_populars {
   display: flex;
@@ -299,7 +309,7 @@ button {
 #lodging {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #f2f2f2;
   border-radius: 24px;
   width: 66%;
@@ -315,6 +325,8 @@ button {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  margin: 0;
+  margin-bottom: 30px;
   width: 235px;
   height: 220px;
 }
@@ -323,6 +335,12 @@ button {
   object-fit: cover;
   width: 235px;
   height: 114px;
+}
+.price {
+  font-weight: 900;
+}
+.star_lodging {
+  margin-bottom: 10px;
 }
 .afficherplus {
   font-weight: bold;
@@ -346,6 +364,7 @@ aside h1 {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  margin: 0;
   width: 344px;
   height: 144px;
 }
@@ -367,6 +386,10 @@ aside h1 {
   justify-content: space-around;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.star_populars {
+  margin-bottom: 50px;
 }
 
 /* MediaQueries Hebergements Populaires */
@@ -408,6 +431,21 @@ aside h1 {
   }
 }
 
+/* petit desktop */
+@media screen and (max-width: 1250px) {
+  #lodging {
+    order: 2;
+    width: 100%;
+  }
+  #populars {
+    order: 1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .figure_populars {
+    margin: 10px;
+  }
+}
 /* Activités */
 #acti {
   margin-top: 60px;
