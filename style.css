@@ -376,7 +376,7 @@ button {
 #populars {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center;*/
   background-color: #f2f2f2;
   border-radius: 24px;
   width: 31%;
@@ -384,12 +384,16 @@ button {
 aside h1 {
   margin-left: 0;
 }
+#populars a {
+  display: flex;
+  justify-content: center;
+}
 .figure_populars {
   display: flex;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin: 14px;
+  margin: 0;
   width: 90%;
   height: 144px;
 }
@@ -407,9 +411,10 @@ aside h1 {
 }
 #pop_chart-line {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 20px;
+  margin-bottom: 0;
 }
 
 .star_populars {
