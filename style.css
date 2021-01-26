@@ -52,29 +52,30 @@ p {
 }
 
 /* Header */
-header {
+#header {
+  width: 100%;
+}
+.header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
+}
+.logo {
   margin-left: 50px;
+  width: 60%;
 }
-header img {
-  padding-top: 40px;
-}
-nav {
-  display: flex;
-  font-size: 1rem;
-  padding-top: 40px;
-}
-.link,
 .link1,
+.link2,
 .inscrire {
-  margin-right: 75px;
+  width: 10%;
+  text-align: center;
 }
 .inscriretext {
   color: #0065fc;
   font-weight: 600;
 }
-nav a:hover {
+header a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
   padding-top: 30px;
@@ -82,40 +83,64 @@ nav a:hover {
 
 /* MediaQueries Header */
 /* Smartphone */
-@media screen and (max-width: 480px) {
-  header {
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .logo {
     margin-left: 20px;
-    align-items: flex-start;
+    width: 40%;
   }
-  header img {
-    padding-top: 20px;
-  }
-  nav {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .inscrire {
+  .link1 {
     order: 2;
-    margin-right: 75px;
-  }
-  .inscrire a:hover {
-    border-bottom: none;
-  }
-  .link {
-    order: 3;
+    width: 50%;
+    padding-top: 20px;
     border-bottom: 2px solid #f2f2f2;
     padding-bottom: 14px;
-    width: 200%;
-    text-align: center;
-    margin-top: 30px;
-    margin-right: 0;
   }
-
-  nav a:hover {
-    color: #0065fc;
+  .link2 {
+    order: 3;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 14px;
+  }
+  .inscrire {
+    order: 1;
+    width: 50%;
+    text-align: right;
+  }
+  header a:hover {
     border-top: none;
+  }
+  .link1:hover,
+  .link2:hover {
+    color: #0065fc;
     border-bottom: 2px solid #0065fc;
     padding-bottom: 14px;
+  }
+}
+/* Petit Desktop */
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  .header {
+    margin-top: 10px;
+    margin: 0;
+  }
+  .logo {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .link1,
+  .link2,
+  .inscrire {
+    width: 33%;
+  }
+  header a:hover {
+    padding-top: 14px;
   }
 }
 
@@ -133,7 +158,7 @@ main p {
 
 /* MediaQueries Main */
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   main {
     margin-top: 20px;
     max-width: 80%;
@@ -267,7 +292,7 @@ button {
 
 /* MediaQueries Filtres */
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #containerfilter {
     margin-left: 20px;
     width: 75%;
@@ -287,7 +312,7 @@ button {
 }
 
 /* petit desktop */
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 601px) and (max-width: 1250px) {
   .filter {
     margin-bottom: 20px;
   }
@@ -393,7 +418,7 @@ aside h1 {
 
 /* MediaQueries Hebergements Populaires */
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #lodging_and_populars {
     margin: 0;
     /*flex-direction: column;*/
@@ -431,7 +456,7 @@ aside h1 {
 }
 
 /* petit desktop */
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 601px) and (max-width: 1250px) {
   #lodging {
     order: 2;
     width: 100%;
@@ -542,7 +567,7 @@ aside h1 {
 
 /* MediaQueries Activites */
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #acti {
     margin-top: 40px;
     margin-left: 20px;
@@ -618,7 +643,7 @@ ul {
 
 /* MediaQueries Footer */
 /* Smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   footer {
     flex-direction: column;
     padding-left: 30px;
