@@ -364,15 +364,14 @@ aside h1 {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  margin: 0;
-  width: 344px;
+  margin: 14px;
+  width: 90%;
   height: 144px;
 }
 .figure_populars img {
   border-radius: 17px 0 0 17px;
   object-fit: cover;
-  width: 127px;
-  height: 144px;
+  width: 40%;
 }
 .figcaption_populars {
   margin-left: 10px;
@@ -443,7 +442,8 @@ aside h1 {
     margin-bottom: 30px;
   }
   .figure_populars {
-    margin: 10px;
+    width: 30%;
+    /*margin: 10px;*/
   }
 }
 /* Activités */
