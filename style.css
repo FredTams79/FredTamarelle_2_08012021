@@ -168,6 +168,8 @@ main p {
   }
   main p {
     margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
   }
 }
 
@@ -308,6 +310,10 @@ button {
   }
   .fa-info {
     margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  article p {
+    font-size: 0.8rem;
   }
 }
 
@@ -376,7 +382,7 @@ button {
 #populars {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
+  justify-content: center;
   background-color: #f2f2f2;
   border-radius: 24px;
   width: 31%;
@@ -438,7 +444,8 @@ aside h1 {
   }
   .figure_lodging {
     box-shadow: 0 0 10px 5px #f2f2f2;
-    width: 344px;
+    width: 90%;
+    margin: 10px 20px;
   }
   .figure_lodging img {
     width: 100%;
@@ -458,6 +465,9 @@ aside h1 {
     justify-content: space-between;
     margin: 20px;
   }
+  .figure_populars {
+    margin: 5px;
+  }
 }
 
 /* petit desktop */
@@ -472,8 +482,8 @@ aside h1 {
     margin-bottom: 30px;
   }
   .figure_populars {
-    width: 30%;
-    /*margin: 10px;*/
+    width: 300px;
+    margin: 10px;
   }
 }
 /* Activités */
@@ -485,7 +495,7 @@ aside h1 {
 #activities {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 10px;
 }
 .figure_activities_port_calanques {
@@ -582,43 +592,48 @@ aside h1 {
     align-items: center;
   }
   .figure_activities_port_calanques {
-    width: 334px;
+    width: 90%;
     height: 190px;
+    margin: 10px 20px;
   }
   .figure_activities_pomegues {
-    width: 334px;
+    width: 90%;
     height: 190px;
+    margin: 10px 20px;
   }
   .figure_activities_frioul {
-    width: 334px;
+    width: 90%;
     height: 190px;
+    margin: 10px 20px;
   }
   .figure_activities_notredame {
-    width: 334px;
+    width: 90%;
     height: 190px;
+    margin: 10px 20px;
   }
   .figure_activities_longchamp {
-    width: 334px;
+    width: 90%;
     height: 190px;
+    margin: 10px 20px;
   }
   .figure_activities_port_calanques img {
-    width: 334px;
+    width: 100%;
     height: 114px;
   }
   .figure_activities_pomegues img {
-    width: 334px;
+    width: 100%;
     height: 114px;
   }
   .figure_activities_frioul img {
-    width: 334px;
+    width: 100%;
     height: 114px;
   }
   .figure_activities_notredame img {
-    width: 334px;
+    width: 100%;
     height: 114px;
   }
   .figure_activities_longchamp img {
-    width: 334px;
+    width: 100%;
     height: 114px;
   }
 }
@@ -651,7 +666,34 @@ ul {
 @media screen and (max-width: 600px) {
   footer {
     flex-direction: column;
-    padding-left: 30px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  footer h2 {
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
+}
+
+/* petit desktop */
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  footer {
+    padding: 30px 50px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  footer h2 {
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
+  #about,
+  #housing,
+  #assistance {
+    width: 20%;
   }
 }
 
