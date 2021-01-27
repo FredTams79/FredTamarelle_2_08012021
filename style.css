@@ -35,72 +35,148 @@
 /* Eléménts principaux de la page */
 Body {
   margin: 0;
-  margin-top: 0;
   font-family: "ralewaymedium", "Times New Roman", Verdana, Tahoma, sans-serif;
-  overflow-x: hidden;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-right: 25px;
+}
+h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-ul {
-  list-style-type: none;
-  font-size: 0.8em;
-  padding: 0;
-  margin: 0;
+/* Header */
+#header {
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.logo {
+  margin-left: 50px;
+  width: 60%;
+}
+.link1,
+.link2,
+.inscrire {
+  width: 10%;
+  text-align: center;
+}
+.inscriretext {
+  color: #0065fc;
+  font-weight: 600;
+}
+header a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 30px;
 }
 
+/* MediaQueries Header */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .logo {
+    margin-left: 20px;
+    width: 40%;
+  }
+  .link1 {
+    order: 2;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 14px;
+  }
+  .link2 {
+    order: 3;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 14px;
+  }
+  .inscrire {
+    order: 1;
+    width: 50%;
+    text-align: right;
+  }
+  header a:hover {
+    border-top: none;
+  }
+  .link1:hover,
+  .link2:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    padding-bottom: 14px;
+  }
+}
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    margin-top: 10px;
+    margin: 0;
+  }
+  .logo {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  .link1,
+  .link2,
+  .inscrire {
+    width: 33%;
+  }
+  header a:hover {
+    padding-top: 14px;
+  }
+}
+
+/* Main Description*/
+main {
+  margin-top: 40px;
+}
 h1 {
-  font-size: 1.3em;
+  font-size: 1.6rem;
   margin-left: 50px;
 }
 main p {
   margin-left: 50px;
 }
-h2 {
-  font-size: 1em;
-  margin-right: 25px;
-}
-h3 {
-  font-size: 1em;
-}
-p {
-  font-size: 0.9em;
-}
 
-/* Header */
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 50px;
-}
-header img {
-  width: 100px;
-  height: 30px;
-}
-nav a:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
-  padding-top: 20px;
-}
-header li {
-  display: inline-block;
-  margin: 40px;
-}
-nav {
-  float: right;
-  margin-right: 75px;
-  font-size: 1em;
-}
-.inscrire {
-  color: #0065fc;
-  font-weight: bold;
+/* MediaQueries Main */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+  h1 {
+    margin-left: 20px;
+  }
+  main p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  }
 }
 
 /* localisation et rechercher */
 #containerlocal {
   display: flex;
-  align-self: center;
-  height: 50px;
-  margin: 50px;
+  margin: 20px 50px;
 }
 .fa-map-marker-alt {
   border: 1px solid #f2f2f2;
@@ -112,29 +188,71 @@ nav {
 #city {
   border: 1px solid #f2f2f2;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
   width: 235px;
   padding: 2px;
   padding-left: 20px;
   cursor: text;
 }
-#search {
+input::placeholder {
+  color: gray;
+  opacity: 0.5;
+}
+button {
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   width: 133px;
   border: 1px solid #0065fc;
   background-color: #0065fc;
   border-radius: 0 17px 17px 0;
   cursor: grab;
 }
+.fa-search {
+  display: none;
+  opacity: 0;
+  position: absolute;
+}
 
-/* filtres */
+/* MediaQueries localisation rechercher */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #containerlocal {
+    width: 100%;
+    margin: 0 20px;
+  }
+  #city {
+    border-right-style: none;
+  }
+  button {
+    width: 50px;
+    border-radius: 17px;
+    margin-left: -15px;
+  }
+  .searchtext {
+    display: none;
+  }
+  .fa-search {
+    opacity: 1;
+    position: relative;
+    padding: 8px;
+  }
+}
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  main {
+    text-align: center;
+  }
+  #containerlocal {
+    justify-content: center;
+  }
+}
+
+/* Filtres */
 #containerfilter {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: bold;
   display: flex;
-  text-align: center;
+
   flex-wrap: wrap;
   margin-left: 50px;
 }
@@ -144,24 +262,25 @@ nav {
   border: 2px solid #f2f2f2;
   border-left-style: none;
   border-radius: 25px;
-  margin-right: 25px;
+  margin-left: 40px;
 }
 .filtericons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #deebff;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  padding: 16px;
+  margin: -2px;
 }
 .icons {
   color: #0065fc;
 }
-.filtertext {
-  margin: 0 10px;
+.fa-child {
+  padding-left: 3px;
+  padding-right: 3px;
 }
-
+.filtertext {
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
 .filter:hover {
   transform: scale(1.1);
   background-color: #deebff;
@@ -176,8 +295,53 @@ nav {
   border-radius: 100%;
   width: 12px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-left: 50px;
+}
+
+/* MediaQueries Filtres */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #containerfilter {
+    margin-left: 20px;
+    width: 75%;
+    justify-content: space-between;
+  }
+  article h2:nth-of-type(1) {
+    flex: 1 100%;
+    display: inline-flex;
+  }
+  .filter {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .fa-info {
+    margin-left: 20px;
+  }
+  article p {
+    font-size: 0.8rem;
+    width: 90%;
+    line-height: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #containerfilter {
+    justify-content: center;
+  }
+  .filter {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  article h2 {
+    width: 100%;
+    text-align: center;
+  }
+  article p {
+    text-align: center;
+  }
 }
 
 /* Hébergements et Populaires*/
@@ -189,6 +353,7 @@ nav {
 }
 .blue {
   color: #0065fc;
+  margin-bottom: 10px;
 }
 .grey {
   color: #f2f2f2;
@@ -196,6 +361,7 @@ nav {
 #lodging {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #f2f2f2;
   border-radius: 24px;
   width: 66%;
@@ -203,6 +369,7 @@ nav {
 #lodging h1 {
   width: 100%;
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 .figure_lodging {
   display: flex;
@@ -210,8 +377,8 @@ nav {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  width: 235px;
-  height: 220px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .figure_lodging img {
   border-radius: 17px 17px 0 0;
@@ -219,7 +386,11 @@ nav {
   width: 235px;
   height: 114px;
 }
-.figcaption_lodging {
+.price {
+  font-weight: 900;
+}
+.star_lodging {
+  margin-bottom: 10px;
 }
 .afficherplus {
   font-weight: bold;
@@ -230,23 +401,31 @@ nav {
 #populars {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   background-color: #f2f2f2;
   border-radius: 24px;
   width: 31%;
+}
+aside h1 {
+  margin-left: 0;
+}
+#populars a {
+  display: flex;
+  justify-content: center;
 }
 .figure_populars {
   display: flex;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  width: 344px;
+  margin: 0;
+  width: 90%;
   height: 144px;
 }
 .figure_populars img {
   border-radius: 17px 0 0 17px;
   object-fit: cover;
-  width: 127px;
-  height: 144px;
+  width: 40%;
 }
 .figcaption_populars {
   margin-left: 10px;
@@ -258,63 +437,104 @@ nav {
 #pop_chart-line {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  margin-bottom: 10px;
+  width: 100%;
+  margin: 20px;
+  margin-bottom: 0;
 }
 
+.star_populars {
+  margin-bottom: 50px;
+}
+
+/* MediaQueries Hebergements Populaires */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #lodging_and_populars {
+    margin: 0;
+  }
+  #lodging h1 {
+    margin-left: 20px;
+  }
+  #lodging {
+    order: 2;
+    flex: 1 100%;
+    background-color: white;
+    flex-flow: column nowrap;
+  }
+  .figure_lodging {
+    box-shadow: 0 0 10px 5px #f2f2f2;
+    margin: 10px 20px;
+  }
+  .figure_lodging img {
+    min-width: 100%;
+  }
+  .afficherplus {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  #populars {
+    order: 1;
+    flex: 1 100%;
+    border-radius: 0;
+  }
+  #pop_chart-line {
+    margin: 20px;
+  }
+  .figure_populars {
+    margin: 5px;
+  }
+}
+
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  #lodging {
+    order: 2;
+    width: 100%;
+  }
+  #populars {
+    order: 1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .figure_populars {
+    width: 300px;
+    margin: 10px;
+  }
+}
 /* Activités */
-#activities h1 {
+#acti {
   margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 #activities {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 500px;
+  justify-content: center;
 }
 .figure_activities_port_calanques {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
   border-radius: 20px;
-  width: 300px;
-  height: 455px;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
-.figure_activities_pomegues {
+.figure_double {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  justify-content: space-between;
+}
+.figure_activities_pomegues {
   border-radius: 20px;
-  width: 300px;
-  height: 235px;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 .figure_activities_frioul {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
   border-radius: 20px;
-  width: 300px;
-  height: 164px;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 .figure_activities_notredame {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
   border-radius: 20px;
-  width: 300px;
-  height: 195px;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 .figure_activities_longchamp {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
   border-radius: 20px;
-  width: 300px;
-  height: 210px;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 .figure_activities_port_calanques img {
@@ -356,28 +576,126 @@ nav {
 }
 .figcaption_activities {
   margin-left: 20px;
+  padding-bottom: 10px;
 }
 
-/* footer */
+/* MediaQueries Activites */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  #acti {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  #activities {
+    flex-direction: column;
+  }
+  .figure_activities_port_calanques {
+    width: 90%;
+    height: 190px;
+    margin: 10px 20px;
+  }
+  .figure_activities_pomegues {
+    width: 90%;
+    height: 190px;
+    margin: 10px 20px;
+  }
+  .figure_activities_frioul {
+    width: 90%;
+    height: 190px;
+    margin: 10px 20px;
+  }
+  .figure_activities_notredame {
+    width: 90%;
+    height: 190px;
+    margin: 10px 20px;
+  }
+  .figure_activities_longchamp {
+    width: 90%;
+    height: 190px;
+    margin: 10px 20px;
+  }
+  .figure_activities_port_calanques img {
+    width: 100%;
+    height: 124px;
+  }
+  .figure_activities_pomegues img {
+    width: 100%;
+    height: 124px;
+  }
+  .figure_activities_frioul img {
+    width: 100%;
+    height: 124px;
+  }
+  .figure_activities_notredame img {
+    width: 100%;
+    height: 124px;
+  }
+  .figure_activities_longchamp img {
+    width: 100%;
+    height: 124px;
+  }
+}
+
+/* Footer */
 footer {
   display: flex;
   background-color: #f2f2f2;
   padding: 50px;
-  align-items: baseline;
-  min-width: 100%;
+  margin: 0;
+  line-height: 1.5rem;
+  margin-top: 50px;
+  /*max-width: 100%; pas besoin*/
+}
+ul {
+  list-style-type: none;
+  font-size: 1rem; /* pour info sinon inutile */
+  padding: 0;
   margin: 0;
 }
-#about {
-  width: 32%;
-}
-#housing {
-  width: 24%;
-}
+#about,
+#housing,
 #assistance {
-  width: 17.5%;
+  width: 33%;
 }
 
-/* liens */
+/* MediaQueries Footer */
+/* Smartphone */
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 20px;
+    line-height: 1.2rem;
+  }
+  footer h2 {
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  footer {
+    padding: 30px 50px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  footer h2 {
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
+  #about,
+  #housing,
+  #assistance {
+    width: 20%;
+  }
+}
+
+/* Liens */
 a:link {
   text-decoration: none;
   color: black;
