@@ -122,7 +122,7 @@ header a:hover {
     padding-bottom: 14px;
   }
 }
-/* Petit Desktop */
+/* Tablette */
 @media screen and (min-width: 601px) and (max-width: 1250px) {
   .header {
     margin-top: 10px;
@@ -239,6 +239,15 @@ button {
     position: relative;
   }
 }
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  main {
+    text-align: center;
+  }
+  #containerlocal {
+    justify-content: center;
+  }
+}
 
 /* Filtres */
 #containerfilter {
@@ -258,17 +267,17 @@ button {
   margin-left: 40px;
 }
 .filtericons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #deebff;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  margin-left: -1px;
+  padding: 16px;
+  margin: -2px;
 }
 .icons {
   color: #0065fc;
+}
+.fa-child {
+  padding-left: 3px;
+  padding-right: 3px;
 }
 .filtertext {
   margin: 0 15px;
@@ -319,10 +328,20 @@ button {
   }
 }
 
-/* petit desktop */
-@media screen and (min-width: 601px) and (max-width: 1250px) {
+/* Tablette */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #containerfilter {
+    justify-content: center;
+  }
   .filter {
+    width: 30%;
     margin-bottom: 20px;
+  }
+  article h2 {
+    width: 100%;
+  }
+  article p {
+    text-align: center;
   }
 }
 
@@ -472,7 +491,7 @@ aside h1 {
   }
 }
 
-/* petit desktop */
+/* Tablette */
 @media screen and (min-width: 601px) and (max-width: 1250px) {
   #lodging {
     order: 2;
@@ -679,7 +698,7 @@ ul {
   }
 }
 
-/* petit desktop */
+/* Tablette */
 @media screen and (min-width: 601px) and (max-width: 1250px) {
   footer {
     padding: 30px 50px;
