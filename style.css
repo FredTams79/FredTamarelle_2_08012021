@@ -263,6 +263,7 @@ button {
   border-left-style: none;
   border-radius: 25px;
   margin-left: 40px;
+  transition: all 4s ease-out;
 }
 .filtericons {
   background-color: #deebff;
@@ -379,6 +380,7 @@ button {
   padding: 5px;
   margin: 0;
   margin-bottom: 30px;
+  transition: all 2s ease-out;
 }
 .figure_lodging img {
   border-radius: 17px 17px 0 0;
@@ -421,6 +423,7 @@ aside h1 {
   margin: 0;
   width: 90%;
   height: 144px;
+  transition: all 2s ease-out;
 }
 .figure_populars img {
   border-radius: 17px 0 0 17px;
@@ -515,6 +518,7 @@ aside h1 {
 .figure_activities_port_calanques {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
+  transition: all 2s ease-out;
 }
 .figure_double {
   display: flex;
@@ -524,18 +528,22 @@ aside h1 {
 .figure_activities_pomegues {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
+  transition: all 2s ease-out;
 }
 .figure_activities_frioul {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
+  transition: all 2s ease-out;
 }
 .figure_activities_notredame {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
+  transition: all 2s ease-out;
 }
 .figure_activities_longchamp {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
+  transition: all 2s ease-out;
 }
 .figure_activities_port_calanques img {
   border-radius: 20px 20px 0 0;
