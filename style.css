@@ -84,9 +84,9 @@ header a:hover {
 /* MediaQueries Header */
 /* Smartphone */
 @media screen and (max-width: 600px) {
-  body {
+  /*body {
     overflow-x: hidden;
-  }
+  }*/
   .header {
     margin-top: 10px;
     margin-bottom: 50px;
